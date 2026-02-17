@@ -1,0 +1,15 @@
+{
+  "name": "Pizza Cantina",
+  "short_name": "Pizza Cantina",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4eee3",
+  "theme_color": "#9f201a",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
