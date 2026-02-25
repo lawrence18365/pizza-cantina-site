@@ -30,12 +30,13 @@
   --warm-300: #F0EBE5;
   --warm-400: #E5DDD4;
   
-  /* Semantic Colors */
-  --color-background: var(--warm-100);
-  --color-surface: #FFFFFF;
+  /* Semantic Colors - Matching homepage */
+  --color-background: #f4eee3;
+  --color-background-gradient: radial-gradient(circle at 12% -10%, #ffe5bf 0%, transparent 45%), radial-gradient(circle at 100% 100%, #f0d6cb 0%, transparent 32%);
+  --color-surface: #fffaf2;
   --color-surface-elevated: #FFFFFF;
-  --color-border: var(--warm-400);
-  --color-border-subtle: var(--warm-300);
+  --color-border: #d8ccbc;
+  --color-border-subtle: #f0e7d8;
   
   --color-text-primary: var(--neutral-900);
   --color-text-secondary: var(--neutral-600);
@@ -153,7 +154,8 @@ body {
   font-weight: var(--weight-regular);
   line-height: var(--leading-normal);
   color: var(--color-text-primary);
-  background-color: var(--color-background);
+  background: var(--color-background-gradient), var(--color-background);
+  overflow-x: hidden;
 }
 
 img, picture, video, canvas, svg {
@@ -226,9 +228,9 @@ a {
   right: 0;
   z-index: 1000;
   height: var(--header-height);
-  background: rgba(253, 252, 251, 0.85);
+  background: rgba(244, 238, 227, 0.85);
   backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid #d8ccbc;
 }
 
 .header__inner {
@@ -323,7 +325,7 @@ a {
   display: none;
   padding: var(--space-2) var(--space-4);
   background: transparent;
-  border: 1px solid var(--color-border);
+  border: 1px solid #d8ccbc;
   border-radius: var(--radius-md);
   font-size: var(--text-sm);
   font-weight: var(--weight-semibold);
@@ -334,7 +336,7 @@ a {
 
 .nav-toggle:hover {
   background: var(--warm-200);
-  border-color: var(--color-border-subtle);
+  border-color: #f0e7d8;
 }
 
 /* Header Actions */
@@ -376,14 +378,14 @@ a {
 }
 
 .btn--secondary {
-  background: var(--color-surface);
+  background: #fffaf2;
   color: var(--color-text-primary);
-  border: 1px solid var(--color-border);
+  border: 1px solid #d8ccbc;
 }
 
 .btn--secondary:hover {
   background: var(--warm-200);
-  border-color: var(--color-border);
+  border-color: #d8ccbc;
 }
 
 .btn--large {
@@ -398,8 +400,8 @@ a {
 .page-header {
   padding-top: calc(var(--header-height) + var(--space-16));
   padding-bottom: var(--space-12);
-  background: linear-gradient(180deg, var(--warm-200) 0%, var(--color-background) 100%);
-  border-bottom: 1px solid var(--color-border-subtle);
+  background: linear-gradient(180deg, #f0e7d8 0%, #f4eee3 100%);
+  border-bottom: 1px solid #d8ccbc;
 }
 
 .page-header__content {
@@ -442,7 +444,7 @@ a {
 }
 
 .section--white {
-  background: var(--color-surface);
+  background: #fffaf2;
 }
 
 /* ============================================
@@ -501,8 +503,8 @@ a {
    ============================================ */
 .menu-item {
   position: relative;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
+  background: #fffaf2;
+  border: 1px solid #f0e7d8;
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   transition: all var(--duration-normal) var(--ease-default);
@@ -524,7 +526,7 @@ a {
 }
 
 .menu-item:hover {
-  border-color: var(--color-border);
+  border-color: #d8ccbc;
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
@@ -590,7 +592,7 @@ a {
   text-align: center;
   padding: var(--space-8) var(--space-6);
   background: var(--warm-200);
-  border: 1px solid var(--color-border-subtle);
+  border: 1px solid #f0e7d8;
   border-radius: var(--radius-xl);
 }
 
@@ -668,7 +670,7 @@ a {
 
 /* Light button variant for dark backgrounds */
 .btn--light {
-  background: var(--color-surface);
+  background: #fffaf2;
   color: var(--color-text-primary);
 }
 
@@ -772,8 +774,8 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border-subtle);
+  background: #fffaf2;
+  border-top: 1px solid #d8ccbc;
   padding: var(--space-2) var(--space-4);
   z-index: 1000;
   justify-content: space-around;
@@ -866,11 +868,11 @@ a {
     top: var(--header-height);
     left: 0;
     right: 0;
-    background: var(--color-surface);
+    background: #fffaf2;
     flex-direction: column;
     padding: var(--space-6);
     gap: var(--space-2);
-    border-bottom: 1px solid var(--color-border-subtle);
+    border-bottom: 1px solid #f0e7d8;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
