@@ -1070,6 +1070,10 @@ p {
   color: #ffd79d;
 }
 
+.footer-credit a {
+  color: inherit;
+}
+
 .footer-note {
   text-align: center;
   margin: 1.3rem 0 0;
